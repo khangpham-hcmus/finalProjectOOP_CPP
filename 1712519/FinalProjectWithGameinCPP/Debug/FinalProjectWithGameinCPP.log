@@ -1,2 +1,8 @@
-﻿  Main.cpp
+﻿  EarthHero.cpp
+  FireHero.cpp
+  Main.cpp
+  MetalHero.cpp
+  WaterHero.cpp
+  WoodHero.cpp
+  Generating Code...
   FinalProjectWithGameinCPP.vcxproj -> F:\Do An Cuoi Ki OOP 16.06\finalProjectOOP_CPP\1712519\Debug\FinalProjectWithGameinCPP.exe

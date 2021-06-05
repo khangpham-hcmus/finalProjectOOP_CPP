@@ -139,10 +139,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EarthHero.cpp" />
+    <ClCompile Include="FireHero.cpp" />
+    <ClCompile Include="Hero.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MetalHero.cpp" />
+    <ClCompile Include="WaterHero.cpp" />
+    <ClCompile Include="WoodHero.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ListHero.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EarthHero.h" />
+    <ClInclude Include="FireHero.h" />
+    <ClInclude Include="Hero.h" />
+    <ClInclude Include="ManageHeaders.h" />
+    <ClInclude Include="MetalHero.h" />
+    <ClInclude Include="WaterHero.h" />
+    <ClInclude Include="WoodHero.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

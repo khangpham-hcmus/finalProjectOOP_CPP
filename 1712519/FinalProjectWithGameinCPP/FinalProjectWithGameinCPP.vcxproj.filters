@@ -18,10 +18,51 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MetalHero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WoodHero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WaterHero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FireHero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EarthHero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ListHero.txt">
       <Filter>Source Files</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterHero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FireHero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EarthHero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MetalHero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WoodHero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManageHeaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
