@@ -77,7 +77,7 @@ protected:
 	void addHero(Hero* otherHero);
 public:
 	static Hero* createHero(string _TenThuocTinh_);
-
-
+public:
+	static vector<Hero*> GET_LIST_HEROS_FROM_FILE(string filename__);
 
 };

@@ -1,8 +1,12 @@
 #include"ManageHeaders.h"
+string _FILENAME_ = "ListHero.txt";
 int main() {
 	DeclareHeros _declare_;
-	Hero* hr = Hero::createHero("Water");
-	cout << hr->toString();
-	cout << hr->className();
+	vector<Hero*> DanhSachAnhHung = Hero::GET_LIST_HEROS_FROM_FILE(_FILENAME_);
+	for (auto& i : DanhSachAnhHung)
+	{
+		cout << i->toString() << endl;
+		cout << i->className() << endl << "---------------------------------------" << endl;
+	}
 	return 0;
 }

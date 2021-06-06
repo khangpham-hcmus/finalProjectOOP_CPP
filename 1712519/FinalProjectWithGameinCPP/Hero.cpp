@@ -26,6 +26,37 @@ void Hero::addHero(Hero* otherHero)
     ListOfHeros.push_back(otherHero);
 }
 
+vector<Hero*> Hero::GET_LIST_HEROS_FROM_FILE(string filename__)
+{
+    vector<Hero*> DanhSachAnhHung;
+    fstream f;
+    f.open(filename__, ios::in);
+    if (f.is_open())
+    {
+        string lineinfo;
+        string temp;
+        Hero* hr = nullptr;
+        while (getline(f, lineinfo))
+        {
+            vector<string>arr;
+            stringstream ss(lineinfo);
+            while (getline(ss, temp,';'))
+            {
+                arr.push_back(temp);
+            }
+            hr = Hero::createHero(arr[1]);
+            hr->setTen(arr[0]);
+            hr->setMau(stof(arr[2]));
+            hr->setCong(stof(arr[3]));
+            hr->setThu(stof(arr[4]));
+            hr->setTocDo(stof(arr[5]));
+            DanhSachAnhHung.push_back(hr);
+        }
+        f.close();
+    }
+    return DanhSachAnhHung;
+}
+
 Hero* Hero::createHero(string _TenThuocTinh_)
 {
     if (_TenThuocTinh_.size() == 1)
