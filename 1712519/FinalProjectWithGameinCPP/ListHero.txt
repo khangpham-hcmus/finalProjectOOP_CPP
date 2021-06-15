@@ -8,3 +8,4 @@ Ursa;Earth;587;45;5;35
 Gondar;Earth;473;45;6;40
 Luna;Metal;435;43;3;18
 Naga Siren;Water;549;56;6;32
+anhhungrom;Metal;1000;100;30;5

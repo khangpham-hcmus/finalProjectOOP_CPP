@@ -4,6 +4,10 @@
 #include<vector>
 #include<fstream>
 #include<sstream>
+#include<list>
+#include<queue>
+#include<iterator>
+
 using namespace std;
 class Hero
 {
@@ -63,7 +67,7 @@ public://setter:
 		this->TocDo = _TocDo_;
 	}
 public:
-	string toString();
+	virtual string toString();
 public:
 	//static vector<Hero*> GET_LIST_HERO_FROM_TEXT(string filename);
 public:
@@ -79,5 +83,7 @@ public:
 	static Hero* createHero(string _TenThuocTinh_);
 public:
 	static vector<Hero*> GET_LIST_HEROS_FROM_FILE(string filename__);
-
+	static Hero* InputHero();
+	static int INSERT_HERO_TO_FILE();
+	static Hero* showHeros();
 };

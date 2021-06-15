@@ -143,19 +143,25 @@
     <ClCompile Include="FireHero.cpp" />
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="MetalHero.cpp" />
+    <ClCompile Include="User.cpp" />
     <ClCompile Include="WaterHero.cpp" />
     <ClCompile Include="WoodHero.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="ListHero.txt" />
+    <Text Include="Log.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EarthHero.h" />
     <ClInclude Include="FireHero.h" />
     <ClInclude Include="Hero.h" />
     <ClInclude Include="ManageHeaders.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="MetalHero.h" />
+    <ClInclude Include="Timing.h" />
+    <ClInclude Include="User.h" />
     <ClInclude Include="WaterHero.h" />
     <ClInclude Include="WoodHero.h" />
   </ItemGroup>

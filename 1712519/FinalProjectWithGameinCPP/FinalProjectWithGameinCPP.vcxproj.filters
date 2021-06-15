@@ -13,56 +13,101 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\HeroHeaderfiles">
+      <UniqueIdentifier>{89d2bcd2-aa47-4f39-9e07-706d991867a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HerosCpp">
+      <UniqueIdentifier>{4119e72d-74e2-4433-a339-aa52678eda86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datas">
+      <UniqueIdentifier>{34af8cca-17e1-451d-999e-90e8322dfa8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UserGameHeaders">
+      <UniqueIdentifier>{64937b39-326c-4782-822b-423b9e7c2f97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UserGameCpp">
+      <UniqueIdentifier>{c7af1db2-a5b4-4741-834b-685130363365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MenuCpp">
+      <UniqueIdentifier>{56b5496c-d85c-4deb-b532-c01ab8edd68d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MenuHeaders">
+      <UniqueIdentifier>{149b70ea-0c89-4a59-9766-b086be12b49f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TimeHandlingHeaders">
+      <UniqueIdentifier>{abd8530c-ab2c-463b-a5f9-04b04b388bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MainPack">
+      <UniqueIdentifier>{a4dbd360-5277-488e-9a0d-fcd0bf0158c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Hero.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MetalHero.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="WoodHero.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="WaterHero.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="EarthHero.cpp">
+      <Filter>Source Files\HerosCpp</Filter>
     </ClCompile>
     <ClCompile Include="FireHero.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\HerosCpp</Filter>
     </ClCompile>
-    <ClCompile Include="EarthHero.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Hero.cpp">
+      <Filter>Source Files\HerosCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="MetalHero.cpp">
+      <Filter>Source Files\HerosCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="WaterHero.cpp">
+      <Filter>Source Files\HerosCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="WoodHero.cpp">
+      <Filter>Source Files\HerosCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>Source Files\UserGameCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files\MenuCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\MainPack</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ListHero.txt">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Datas</Filter>
+    </Text>
+    <Text Include="Log.txt">
+      <Filter>Source Files\Datas</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Hero.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WaterHero.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="EarthHero.h">
+      <Filter>Header Files\HeroHeaderfiles</Filter>
     </ClInclude>
     <ClInclude Include="FireHero.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\HeroHeaderfiles</Filter>
     </ClInclude>
-    <ClInclude Include="EarthHero.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MetalHero.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WoodHero.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Hero.h">
+      <Filter>Header Files\HeroHeaderfiles</Filter>
     </ClInclude>
     <ClInclude Include="ManageHeaders.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\HeroHeaderfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="MetalHero.h">
+      <Filter>Header Files\HeroHeaderfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterHero.h">
+      <Filter>Header Files\HeroHeaderfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="WoodHero.h">
+      <Filter>Header Files\HeroHeaderfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>Header Files\UserGameHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files\MenuHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Timing.h">
+      <Filter>Header Files\TimeHandlingHeaders</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
