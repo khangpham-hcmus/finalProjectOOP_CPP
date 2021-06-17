@@ -1,12 +1,7 @@
 #pragma once
-#include"MetalHero.h"
-#include"WoodHero.h"
-#include"WaterHero.h"
-#include"EarthHero.h"
-#include"FireHero.h"
 #include"Timing.h"
 #include"Menu.h"
-#include"User.h"
+#include"FightingGame.h"
 class DeclareHeros
 {
 private:

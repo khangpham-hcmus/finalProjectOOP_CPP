@@ -8,6 +8,8 @@
 #include"WaterHero.h"
 #include"WoodHero.h"
 #include"User.h"
+#include"FightingGame.h"
+#include<iomanip>
 using namespace std;
 class Menu {
 public:
@@ -15,9 +17,15 @@ public:
 	static int Show();
 	//check program is continue:
 	static int isContinue();
-	//exit program screen
-	static void ExitProgram();
 	//ask user to see detail log?
 	static int isShowDetailLog();
-	//get 3 heros from player:
+private:
+	static int showMenuTime();
+public:
+	//functions of project
+	static int function1_InputHero(vector<Hero*> ListOfHeros);
+	static int function2_ShowLog();
+	static int function3_PlaywithNPC(string username,vector<Hero*> ListOfHeros);
+	static int function4_PlaywithOtherUser(string username1,vector<Hero*>ListOfHeros);
+	static int function5_ExitProgram();
 };

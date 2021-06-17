@@ -1,10 +1,8 @@
-Sniper;Fire;454;36;2;29
-Troll;Earth;620;48;2.5;15
-Gyrycopter;Metal;492;41;2;30
-Treant Protector;Wood;700;62;1.5;38
-Trasex;Metal;473;40;2;27
-Lanaya;Water;492;53;4;29
-Ursa;Earth;587;45;5;35
-Gondar;Earth;473;45;6;40
-Luna;Metal;435;43;3;18
-Naga Siren;Water;549;56;6;32
+20:58:25,17/6/2021|Team khang|Troll;Earth;216.4;48;2.5;16.5|Treant Protector;Wood;0;62;1.5;38|Lanaya;Water;0;53;4;31.9|Lanaya;Water;0;53;4;31.9|Team NPC|Gyrycopter;Metal;0;41;2;33|anhhungxadieu;Fire;1050;560;340;9|Luna;Metal;35;43;3;19.8|NPC win
+20:58:55,17/6/2021|Team khangpham|Sniper;Fire;0;36;1;29|Troll;Earth;288;48;2.5;15|Gyrycopter;Metal;19;41;2;33|Gyrycopter;Metal;19;41;2;33|Team NPC|Naga Siren;Water;232.53;61.6;6;38.72|Ursa;Earth;0;45;5;35|Gondar;Earth;0;45;6;40|khangpham win
+22:27:34,17/6/2021|Team khangpham|Sniper;Fire;0;36;2;26.1|Troll;Earth;429.11;48;2.5;15|Gyrycopter;Metal;0;41;2;33|Gyrycopter;Metal;0;41;2;33|Team NPC|Treant Protector;Wood;217;62;1.5;45.98|Trasex;Metal;0;40;2;27|Gyrycopter;Metal;24;41;2;30|NPC win
+23:02:43,17/6/2021|Team khangpham|Sniper;Fire;0;36;2;29|Troll;Earth;594.65;48;2.5;13.5|Gyrycopter;Metal;0;41;2;33|Gyrycopter;Metal;0;41;2;33|Team huy|Treant Protector;Wood;320.5;62;1.5;41.8|Gyrycopter;Metal;0;41;2;30|Troll;Earth;497;48;2.5;14.85|huy win
+23:08:36,17/6/2021|Team khang|Sniper;Fire;0;36;2;26.1|Troll;Earth;327.11;48;2.5;15|Gyrycopter;Metal;0;41;2;33|Gyrycopter;Metal;0;41;2;33|Team NPC|Treant Protector;Wood;217;62;1.5;45.98|Luna;Metal;0;43;3;18|anhungxadieu;Metal;337;40;24;100|NPC win
+23:08:50,17/6/2021|Team khang|Treant Protector;Wood;453.75;68.2;1.5;37.62|Trasex;Metal;227.148;40;2;24.3|Lanaya;Water;0;53;4;29|Lanaya;Water;0;53;4;29|Team 1|Ursa;Earth;0;45;2.5;35|Gondar;Earth;0;45;6;40|Luna;Metal;56.75;43;3;16.2|khang win
+23:25:41,17/6/2021|Team khangpham|Sniper;Fire;25;39.6;2;29|Troll;Earth;614.65;48;2.5;13.5|Gyrycopter;Metal;0;41;2;33|Gyrycopter;Metal;0;41;2;33|Team NPC|Gyrycopter;Metal;0;41;1;33|Sniper;Fire;0;36;2;29|Trasex;Metal;29.81;40;2;29.7|khangpham win
+23:26:07,17/6/2021|Team khangpham|Treant Protector;Wood;361.5;62;0.75;41.8|Trasex;Metal;0;40;2;27|Lanaya;Water;309.8;58.3;4;29|Lanaya;Water;309.8;58.3;4;29|Team huy|Gyrycopter;Metal;0;45.1;2;33|Troll;Earth;336.15;48;2.5;13.5|Sniper;Fire;0;36;1;29|khangpham win

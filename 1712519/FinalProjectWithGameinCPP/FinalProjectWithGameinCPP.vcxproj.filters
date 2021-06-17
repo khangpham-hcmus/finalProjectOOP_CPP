@@ -69,6 +69,9 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files\MainPack</Filter>
     </ClCompile>
+    <ClCompile Include="FightingGame.cpp">
+      <Filter>Source Files\HerosCpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ListHero.txt">
@@ -108,6 +111,9 @@
     </ClInclude>
     <ClInclude Include="Timing.h">
       <Filter>Header Files\TimeHandlingHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="FightingGame.h">
+      <Filter>Header Files\HeroHeaderfiles</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

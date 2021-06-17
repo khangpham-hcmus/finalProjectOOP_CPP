@@ -1,5 +1,9 @@
 ﻿#pragma once
-#include"ManageHeaders.h"
+#include"EarthHero.h"
+#include"WaterHero.h"
+#include"WoodHero.h"
+#include"FireHero.h"
+#include"MetalHero.h"
 #include<ctime>
 const int NUMBER_OF_HEROS = 3;
 using namespace std;
@@ -8,17 +12,17 @@ class User
 protected:
 	string username;
 	vector<Hero*> danhsachTuong;
-protected:
-	//default constructor
-	User();
 public:
 	//getter
 	string getUsername();
 	vector<Hero*> getHeros();
+	Hero* getHeroAt(int index);
 public:
 	//setter
 	void setUsername(string name);
 public:
+	//default constructor
+	User();
 	//constructor with parameters for username
 	User(string nameHero, Hero* ah1, Hero* ah2, Hero* ah3);
 protected:
@@ -37,5 +41,7 @@ public:
 public:
 	string toString();
 public://destructor:
-	~User() {}
+	~User() {
+		this->danhsachTuong.clear();
+	}
 };

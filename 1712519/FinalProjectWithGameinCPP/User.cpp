@@ -1,10 +1,13 @@
 #include"User.h"
-
+//------------------------------------------------------------------------------------
+//default constructor
 User::User()
 {
+	danhsachTuong.resize(0);
 	username = "";
 }
-
+//------------------------------------------------------------------------------------
+//constructor will 3 parameter
 User::User(string nameHero, Hero* ah1, Hero* ah2, Hero* ah3)
 {
 	this->username = nameHero;
@@ -13,7 +16,12 @@ User::User(string nameHero, Hero* ah1, Hero* ah2, Hero* ah3)
 	this->danhsachTuong.push_back(ah3);
 	this->AutoFixInSameTeam();
 }
-
+//------------------------------------------------------------------------------------
+//static method to create NPC player
+/*
+* Input: none
+* Output: an User object
+*/
 User* User::createNPC()
 {
 	vector<Hero*> HerosList = Hero::GET_LIST_HEROS_FROM_FILE("ListHero.txt");
@@ -29,22 +37,34 @@ User* User::createNPC()
 	}
 	return new User("NPC",dsTuong[0],dsTuong[1],dsTuong[2]);
 }
-
+//------------------------------------------------------------------------------------
 string User::getUsername()
 {
 	return this->username;
 }
-//
+//------------------------------------------------------------------------------------
 vector<Hero*> User::getHeros()
 {
 	return this->danhsachTuong;
 }
-//
+//------------------------------------------------------------------------------------
+Hero* User::getHeroAt(int index)
+{
+	if (index >= 0 && index < danhsachTuong.size())
+		return danhsachTuong[index];
+	return nullptr;
+}
+//------------------------------------------------------------------------------------
 void User::setUsername(string name)
 {
 	this->username = name;
 }
-//
+//------------------------------------------------------------------------------------
+/*
+* This method will auto custom the attribute attack,fense,blood of heros in the same team
+* Input: none
+* Output: none but the attribute of these heros will autofix internal
+*/
 void User::AutoFixInSameTeam()
 {
 	for (int i = 0; i < NUMBER_OF_HEROS; i++)
@@ -55,10 +75,7 @@ void User::AutoFixInSameTeam()
 				continue;
 			else
 			{
-				int check = -1;
 				Hero* currentHero = danhsachTuong[j];
-				if (danhsachTuong[i] == nullptr)
-					check = 5;
 				if (currentHero->KiemTraTuongKhac(danhsachTuong[i]))
 				{
 					double tocdo_ = currentHero->getTocDo() + 0.1 * currentHero->getTocDo();
@@ -73,7 +90,10 @@ void User::AutoFixInSameTeam()
 		}
 	}
 }
-//
+//------------------------------------------------------------------------------------
+/*
+* This static method will create an user object
+*/
 User* User::CreateUser(string name, vector<Hero*> ListOfHeros)
 {
 	vector<Hero*> heros;
@@ -85,7 +105,6 @@ User* User::CreateUser(string name, vector<Hero*> ListOfHeros)
 	//select hero 1:
 	while (true)
 	{
-		cout << "Kich thuoc danh sach: " << ListOfHeros.size() << endl;
 		try
 		{
 			cout << "First hero is ?: " << endl;
@@ -94,7 +113,7 @@ User* User::CreateUser(string name, vector<Hero*> ListOfHeros)
 			else if (!(selection > 0 && selection <= ListOfHeros.size()))
 				throw - 1;
 			else {
-				heros[0] = (ListOfHeros[selection-1]);
+				heros[0] = (ListOfHeros[selection-1])->clone();
 				break;
 			}
 		}
@@ -120,7 +139,7 @@ User* User::CreateUser(string name, vector<Hero*> ListOfHeros)
 			else if (!(selection > 0 && selection <= ListOfHeros.size()))
 				throw - 1;
 			else {
-				heros[1] = (ListOfHeros[selection-1]);
+				heros[1] = (ListOfHeros[selection-1])->clone();
 				break;
 			}
 		}
@@ -146,7 +165,7 @@ User* User::CreateUser(string name, vector<Hero*> ListOfHeros)
 			else if (!(selection > 0 && selection <= ListOfHeros.size()))
 				throw - 1;
 			else {
-				heros[2] = (ListOfHeros[selection-1]);
+				heros[2] = (ListOfHeros[selection-1])->clone();
 				break;
 			}
 		}
@@ -163,7 +182,7 @@ User* User::CreateUser(string name, vector<Hero*> ListOfHeros)
 	}
 	return new User(name, heros[0], heros[1], heros[2]);
 }
-//
+//------------------------------------------------------------------------------------
 string User::toString()
 {
 	stringstream ss;
@@ -173,4 +192,5 @@ string User::toString()
 	ss << danhsachTuong[2]->getTen();
 	return ss.str();
 }
+//------------------------------------------------------------------------------------
 

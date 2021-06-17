@@ -2,7 +2,7 @@
 #include"Hero.h"
 class EarthHero :public Hero
 {
-public:
+public://default constructor
 	EarthHero()
 	{
 		this->TenAnhHung = "null";
@@ -13,6 +13,7 @@ public:
 		this->TocDo = 0;
 		addHero(this);
 	}
+	//constructor with parameters
 	EarthHero(string _TenAnhHung_, double _Mau_, double _Cong_, double _Thu_, double _TocDo_)
 	{
 		this->TenAnhHung = _TenAnhHung_;
@@ -23,6 +24,7 @@ public:
 		this->TocDo = _TocDo_;
 		addHero(this);
 	}
+	//copy constructor
 	EarthHero(const EarthHero& other)
 	{
 		this->TenAnhHung = other.TenAnhHung;

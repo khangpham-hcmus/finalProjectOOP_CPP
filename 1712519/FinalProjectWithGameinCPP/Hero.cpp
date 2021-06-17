@@ -1,6 +1,5 @@
 #include"Hero.h"
-
-//
+//----------------------------------------------------------------------------------------------
 vector<Hero*> Hero::ListOfHeros;
 string Hero::toString()
 {
@@ -10,9 +9,10 @@ string Hero::toString()
     ss << this->getMau() << ";";
     ss << this->getCong() << ";";
     ss << this->getThu() << ";";
-    ss << this->getTocDo() << "\n";
+    ss << this->getTocDo();
     return ss.str();
 }
+//----------------------------------------------------------------------------------------------
 void Hero::addHero(Hero* otherHero)
 {
     if (otherHero == nullptr)
@@ -26,7 +26,10 @@ void Hero::addHero(Hero* otherHero)
     }
     ListOfHeros.push_back(otherHero);
 }
-
+//----------------------------------------------------------------------------------------------
+/*
+* This method will load the list of heros up to the system gaming
+*/
 vector<Hero*> Hero::GET_LIST_HEROS_FROM_FILE(string filename__)
 {
     vector<Hero*> DanhSachAnhHung;
@@ -59,7 +62,10 @@ vector<Hero*> Hero::GET_LIST_HEROS_FROM_FILE(string filename__)
     }
     return DanhSachAnhHung;
 }
-//
+//----------------------------------------------------------------------------------------------
+/*
+* This method will give the user input a hero to save into the file `ListHero.txt`
+*/
 Hero* Hero::InputHero()
 {
     string ten;
@@ -180,6 +186,9 @@ Hero* Hero::InputHero()
     return hero_;
 }
 //
+/*
+* This method will write a hero to the file and user the `input hero ` mothod internal
+*/
 int Hero::INSERT_HERO_TO_FILE()
 {
     int checkInsert = 0;
@@ -205,10 +214,10 @@ int Hero::INSERT_HERO_TO_FILE()
         f2.open(fileName, ios::in);
         int i = 0;
         while (getline(f2, str)||str.empty()==true) {
-            if (f2.eof() == true)
-                break;
             if (str != "")
                 danhsach.push(str);
+            if (f2.eof() == true)
+                break;
         }
         f2.close();
         //------------------------------------------------------------
@@ -226,7 +235,7 @@ int Hero::INSERT_HERO_TO_FILE()
     }
     return checkInsert;
 }
-//
+//----------------------------------------------------------------------------------------------
 Hero* Hero::showHeros()
 {
     vector<string> listName;
@@ -241,7 +250,7 @@ Hero* Hero::showHeros()
     }
     return nullptr;
 }
-//
+//----------------------------------------------------------------------------------------------
 Hero* Hero::createHero(string _TenThuocTinh_)
 {
     if (_TenThuocTinh_.size() == 1)
@@ -255,3 +264,5 @@ Hero* Hero::createHero(string _TenThuocTinh_)
     }
     return nullptr;
 }
+//----------------------------------------------------------------------------------------------
+

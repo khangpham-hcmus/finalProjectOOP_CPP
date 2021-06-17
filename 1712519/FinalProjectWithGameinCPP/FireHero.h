@@ -3,6 +3,7 @@
 class FireHero :public Hero
 {
 public:
+	//default constructor
 	FireHero()
 	{
 		this->TenAnhHung = "null";
@@ -13,6 +14,7 @@ public:
 		this->TocDo = 0;
 		addHero(this);
 	}
+	//constructor with parameters
 	FireHero(string _TenAnhHung_, double _Mau_, double _Cong_, double _Thu_, double _TocDo_)
 	{
 		this->TenAnhHung = _TenAnhHung_;
@@ -23,6 +25,7 @@ public:
 		this->TocDo = _TocDo_;
 		addHero(this);
 	}
+	//copy constructor
 	FireHero(const FireHero& other)
 	{
 		this->TenAnhHung = other.TenAnhHung;

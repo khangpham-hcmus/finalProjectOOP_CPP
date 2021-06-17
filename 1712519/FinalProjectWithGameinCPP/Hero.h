@@ -7,7 +7,7 @@
 #include<list>
 #include<queue>
 #include<iterator>
-
+//
 using namespace std;
 class Hero
 {
@@ -74,12 +74,17 @@ public:
 	virtual int KiemTraTuongSinh(Hero* other) = 0;
 	virtual int KiemTraTuongKhac(Hero* other) = 0;
 public:
-	virtual string className() = 0;
-	virtual Hero* clone() = 0;
+	virtual string className() = 0;//this method will return a classname and pure virtual method.
+	virtual Hero* clone() = 0;//this method will create clone an object and pure virtual method.
 protected:
 	static vector<Hero*> ListOfHeros;
 	void addHero(Hero* otherHero);
 public:
+	/*
+	* This method will create a hero by the attribute name:
+	* Input: name of attribute
+	* Output: a hero Object
+	*/
 	static Hero* createHero(string _TenThuocTinh_);
 public:
 	static vector<Hero*> GET_LIST_HEROS_FROM_FILE(string filename__);
